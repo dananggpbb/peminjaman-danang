@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Peminjaman Barang</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="jpgg" class="logo">Peminjaman barang Jurusan SMKN 8 Malang</a>
+
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <!-- <li><a href="../index.html#rekomendasi">Tentang</a></li>
+          <li><a href="../index.html#produk">Rekomendasi Buku</a></li> -->
+          <li><a href="../page/daftar.html">Daftar Barang</a></li>
+          <li><a href="../page/formpinjam.html">Form Peminjaman Barang</a></li>
+          <!-- <li><a href="../page/kritik.html">Kritik dan Saran</a></li> -->
+          <li><a href="../page/kontakkami.html">Kontak Kami</a></li>
+          <!-- <li><a href="../page/loginweb.html">Login Akun</a></li> -->
+        </ul>
+        <div class="tombol">&#9776;</div>
+      </div>
+    </nav>
+    <section class="contact-section" id="contact">
+      <h2>Kritik & Saran</h2>
+      <form
+        action="https://script.google.com/macros/s/AKfycbw9jgy-pkBMPERufSgBqjAKj_goK6J4w_om0EVGrvre2X5cIZcDeQ58Ywsk6hR5qd_2Nw/exec"
+        method="post"
+        class="contact-form"
+      >
+        <div class="form-group">
+          <label for="name">Nama:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="masukkan nama anda"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tulis email anda disini"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Pesan</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="3"
+            placeholder="pesan dapat berupa kritik atau saran"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Kirim Pesan</button>
+      </form>
+      <p class="kritik">
+        *kritik dan saran akan selalu kami jadikan bahan untuk lebih baik
+        kedepannya
+      </p>
+    </section>
+    <script type="text/javascript">
+      const tombol = document.querySelector(".tombol");
+      const menu = document.querySelector(".menu");
+
+      tombol.addEventListener("click", () => {
+        menu.classList.toggle("aktif");
+      });
+    </script>
+  </body>
+</html>

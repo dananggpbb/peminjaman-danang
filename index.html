@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Peminjaman Barang</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="logo" class="logo">Peminjaman barang Jurusan SMKN 8 Malang</a>
+
+        <ul class="menu">
+          <!-- <li><a href="#">Home</a></li> -->
+          <!-- <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#rekomendasi">Rekomendasi Buku</a></li> -->
+          <li><a href="page/daftar.html">Daftar Barang</a></li>
+          <li><a href="page/formpinjam.html">Form Peminjaman Barang</a></li>
+          <li><a href="page/kritik.html">Kritik dan Saran</a></li>
+          <li><a href="page/kontakkami.html">Kontak Kami</a></li>
+          <!-- <li><a href="page/loginweb.html">Login Akun</a></li> -->
+        </ul>
+        <div class="tombol">&#9776;</div>
+      </div>
+    </nav>
+    <section class="welcome-section" id="welcome">
+      <div class="welcome-text">
+        <h1>Selamat Datang</h1>
+        <p style="margin-bottom: 40px">
+          Selamat Datang di Web Peminjaman barang Jurusan
+        </p>
+        <p>Kamu ingin meminjam barang apa hari ini?</p>
+        <br />
+        <a href="page/daftar.html" class="btn-primary">Daftar Barang</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 SMKN 8 Malang. All Rights Reserved.</p>
+        <p>
+          Kontak kami:
+          <a href="mailto:info@smkn8malang.sch.id">info@smkn8malang.sch.id</a> |
+          Telepon: <a href="tel:+62341567890">+62 341 567 890</a>
+        </p>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      const tombol = document.querySelector(".tombol");
+      const menu = document.querySelector(".menu");
+
+      tombol.addEventListener("click", () => {
+        menu.classList.toggle("aktif");
+      });
+    </script>
+  </body>
+</html>

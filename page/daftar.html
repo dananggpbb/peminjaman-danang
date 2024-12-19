@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Peminjaman Barang</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="jpgg" class="logo">Peminjaman barang Jurusan SMKN 8 Malang</a>
+
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <!-- <li><a href="../index.html#rekomendasi">Tentang</a></li> -->
+          <!-- <li><a href="../index.html#produk">Rekomendasi Buku</a></li> -->
+          <!-- <li><a href="../page/daftar.html">Daftar Barang</a></li> -->
+          <li><a href="../page/formpinjam.html">Form Peminjaman Barang</a></li>
+          <li><a href="../page/kritik.html">Kritik dan Saran</a></li>
+          <li><a href="../page/kontakkami.html">Kontak Kami</a></li>
+          <!-- <li><a href="../page/loginweb.html">Login Akun</a></li> -->
+        </ul>
+        <div class="tombol">&#9776;</div>
+      </div>
+    </nav>
+    <section class="rekomendasi-section" id="rekomendasi">
+      <h2>Daftar Barang</h2>
+      <form action="">
+        <div class="rekomendasi-container">
+          <div class="rekomendasi-card">
+            <img src="../asset/img/keyboard.jpg" alt="keyboard" />
+            <div class="judul-barang"><h3>Mouse dan Keyboard</h3></div>
+            <br />
+            <div class="tombol-barang">
+              <a href="../page/formpinjam.html" class="btn-primary">Pinjam</a>
+            </div>
+          </div>
+
+          <div class="rekomendasi-card">
+            <img src="../asset/img/proyektor.jpg" alt="proyektor" />
+            <div class="judul-barang"><h3>Proyektor</h3></div>
+            <br />
+            <br />
+            <div class="tombol-barang">
+              <a href="../page/formpinjam.html" class="btn-primary">Pinjam</a>
+            </div>
+          </div>
+
+          <div class="rekomendasi-card">
+            <img src="../asset/img/laptop.jpg" alt="laptop" />
+            <div class="judul-barang"><h3>Laptop</h3></div>
+            <div class="tombol-barang">
+              <a href="../page/formpinjam.html" class="btn-primary">Pinjam</a>
+            </div>
+          </div>
+
+          <div class="rekomendasi-card">
+            <img src="../asset/img/speaker.jpg" alt="speaker" />
+            <div class="judul-barang">
+              <h3>Mini Speaker</h3>
+            </div>
+            <div class="tombol-barang">
+              <a href="../page/formpinjam.html" class="btn-primary">Pinjam</a>
+            </div>
+          </div>
+
+          <div class="rekomendasi-card">
+            <img src="../asset/img/obeng.png" alt="obeng" />
+            <div class="judul-barang"><h3>Obeng</h3></div>
+            <div class="tombol-barang">
+              <a href="../page/formpinjam.html" class="btn-primary">Pinjam</a>
+            </div>
+          </div>
+
+          <div class="rekomendasi-card">
+            <img src="../asset/img/kabelrol.jpeg" alt="kabelrol" />
+            <div class="judul-barang"><h3>Kabel Rol</h3></div>
+            <div class="tombol-barang">
+              <a href="../page/formpinjam.html" class="btn-primary">Pinjam</a>
+            </div>
+          </div>
+
+          <!-- <div class="rekomendasi-card">
+            <img src="../asset/p6.jpeg" alt="themidnigntlibrary" />
+            <h3>6</h3>
+            <p>Harga Sewa buku The Midnight Library adalah Rp 55.000</p>
+            <a href="../page/formpinjam.html" class="btn-primary">SEWA</a>
+          </div>
+
+          <div class="rekomendasi-card">
+            <img src="../asset/p7.jpeg" alt="harrypoter" />
+            <h3>7</h3>
+            <p>Harga Sewa buku Harry Potter adalah Rp 55.000</p>
+            <a href="../page/formpinjam.html" class="btn-primary">SEWA</a>
+          </div>
+
+          <div class="rekomendasi-card">
+            <img src="../asset/p8.jpeg" alt="lauttengah" />
+            <h3>8</h3>
+            <p>Harga Sewa buku Laut Tengah adalah Rp 40.000</p>
+            <a href="../page/formpinjam.html" class="btn-primary">SEWA</a>
+          </div>
+
+          <div class="rekomendasi-card">
+            <img src="../asset/p9.jpeg" alt="pintuharmonika" />
+            <h3>9</h3>
+            <p>Harga Sewa buku Pintu Harmonika adalah Rp40.000</p>
+            <a href="../page/formpinjam.html" class="btn-primary">SEWA</a>
+          </div>
+
+          <div class="rekomendasi-card">
+            <img src="../asset/p10.jpeg" alt="perahukertas" />
+            <h3>10</h3>
+            <p>Harga Sewa buku Perahu Kertas adalah Rp 40.000</p>
+            <a href="../page/formpinjam.html" class="btn-primary">SEWA</a>
+          </div> -->
+        </div>
+      </form>
+    </section>
+
+    <script type="text/javascript">
+      const tombol = document.querySelector(".tombol");
+      const menu = document.querySelector(".menu");
+
+      tombol.addEventListener("click", () => {
+        menu.classList.toggle("aktif");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasil Peminjaman Barang</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Peminjaman Barang Jurusan SMKN 8 Malang</a>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-login">
+      <h1>Data Peminjaman Barang</h1>
+      <p>Nama Lengkap: <span id="hasilNama"></span></p>
+      <p>Kelas: <span id="hasilKelas"></span></p>
+      <p>Nama Barang yang Dipinjam: <span id="hasilBarang"></span></p>
+      <p>Jumlah Barang yang Dipinjam: <span id="jumlah"></span></p>
+      <p>Nama Petugas: <span id="hasilPetugas"></span></p>
+      <p>Tanggal Peminjaman: <span id="tanggal"></span></p>
+      <p>Jam Peminjaman: <span id="Jampinjam"></span></p>
+
+      <button id="btnPrint" class="btn-primary">Cetak Data</button>
+    </div>
+
+    <script>
+      // Mendapatkan parameter dari URL
+      const urlParams = new URLSearchParams(window.location.search);
+
+      document.getElementById("hasilNama").textContent = urlParams.get("nama");
+      document.getElementById("hasilKelas").textContent =
+        urlParams.get("kelas");
+      document.getElementById("hasilBarang").textContent =
+        urlParams.get("barang");
+      document.getElementById("jumlah").textContent = urlParams.get("jumlah");
+      document.getElementById("hasilPetugas").textContent =
+        urlParams.get("nmpetugas");
+      document.getElementById("tanggal").textContent = urlParams.get("tanggal");
+      document.getElementById("Jampinjam").textContent =
+        urlParams.get("jampinjam");
+
+      // Fungsi Cetak
+      document.getElementById("btnPrint").addEventListener("click", () => {
+        window.print();
+      });
+    </script>
+  </body>
+</html>
